@@ -1,0 +1,40 @@
+https://stackoverflow.com/questions/16641210/mongoose-populate-with-array-of-objects-containing-ref
+
+//below are links to add improvements to the app
+https://stackoverflow.com/questions/41717804/populate-and-working-with-parent-child-models-in-mongoose-mongodb
+
+https://stackoverflow.com/questions/41711573/why-are-my-mongoose-one-to-many-relationships-not-associating-properly
+
+https://stackoverflow.com/questions/49484326/when-child-document-is-deleted-how-to-delete-its-reference-inside-parent-docume
+
+https://stackoverflow.com/questions/14348516/cascade-style-delete-in-mongoose/14349259#14349259
+
+https://stackoverflow.com/a/44347976
+
+//https://stackoverflow.com/questions/48197334/cant-use-delete-operator-on-mongoose-query-results
+//https://stackoverflow.com/a/48197599
+//http://mongoosejs.com/docs/api.html#document_Document-toObject
+
+//above are links to add improvements to the app
+
+//postman test
+https://stackoverflow.com/questions/54824469/how-to-automatically-send-jwt-token-collected-in-previous-request-in-postman
+
+https://stackoverflow.com/questions/6390341/how-to-detect-url-change-in-javascript/41825103#41825103
+
+//JS SPA ROUTING BELOW
+https://willtaylor.blog/client-side-routing-in-vanilla-js/
+
+https://medium.com/@bryanmanuele/how-i-implemented-my-own-spa-routing-system-in-vanilla-js-49942e3c4573
+
+https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onhashchange
+
+https://stackoverflow.com/questions/5997450/append-to-url-and-refresh-page
+
+https://dev.to/kodnificent/how-to-build-a-router-with-vanilla-javascript-2a18
+
+https://stackoverflow.com/questions/14970708/detect-change-in-hash-value-of-url-using-javascript
+
+https://stackoverflow.com/questions/35679896/javascript-get-url-segment-and-parameter
+
+//JS SPA ROUTING ABOVE

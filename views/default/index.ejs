@@ -1,0 +1,154 @@
+   <%- include('../includes/header.ejs') %>
+   
+    <section class="section-slideshow">
+   
+        <div class="slides slide-1" style="background-image: linear-gradient(rgba(22, 23, 21, 0), rgb(88, 107, 88)), url('https://dummyimage.com/1500x600/fff/000');">
+            <div class="hero-text">
+                    <h2>Heading</h2>
+                    <p>Paragraph 1</p>
+            </div>
+        </div>
+        <div class="slides slide-2">
+            <div class="hero-text">
+                    <h2>Heading</h2>
+                    <p>Paragraph 2</p>
+            </div>
+        </div>   
+   
+        <a href="#" class="slide-navigation move-left" onclick="index(-1)"><i class="fas fa-chevron-left"></i></a>
+
+        <a href="#" class="slide-navigation move-right" onclick="index(+1)"><i class="fas fa-chevron-right"></i></a>         
+    </section>
+    <section class="section-welcome">
+        <div class="container">
+            
+            <h2 class="title">WELCOME.</h2>
+            <p class="p-welcome">
+                Living valley had silent eat merits esteem bed. In last an or went wise as left. Visited civilly am demesne so colonel he calling. So unreserved do interested increasing sentiments. Vanity day giving points within six not law. Few impression difficulty his use has comparison decisively. 
+            </p>
+            
+        </div>
+
+    </section> 
+    <section class="section-features">
+
+            <div class="container">
+                <h2 class="title">FEATURES.</h2>
+            </div>
+
+        <div class="container flex">
+
+            <div class="col-3 padding-tb-40px">
+                <i class="fab fa-node"></i>
+                <p>
+                    Award winning Site.
+                </p>
+            </div>
+            <div class="col-3 padding-tb-40px">
+                <i class="fab fa-react"></i>
+                <p>
+                    Node JS project.
+                </p>
+            </div>
+            <div class="col-3 padding-tb-40px">
+                <i class="fab fa-js"></i>
+                <p>Javascript Revolution.</p>
+            </div>
+        </div>
+    </section> 
+    <section class="section-cart">
+        <div class="container flex">
+            <div class="col-1">
+                <button class="link-cart">
+                    <div class="box-cart">
+                        CART <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="contents-dropdown">
+            <div class="header-cart-dropdown">
+                <button class="cart-dropdown-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="inner-container">
+                <ul class="list-content-cart">
+                    <li><img src="https://dummyimage.com/600x400/000/fff" alt="Item"/></li>
+                    <li>
+                        <p>CHEESE BURGHER</p>
+                        <p>$50 x 2</p>
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+                <ul class="list-content-cart">
+                    <li><img src="https://dummyimage.com/600x400/000/fff" alt="Item"/></li>
+                    <li>
+                        <p>CHEESE BURGHER</p>
+                        <p>$50 x 2</p>
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>              
+            </div>
+            <div class="footer-cart-dropdown">
+                <a href="cart.html" class="btn btn-primary full-width">CHECKOUT</a>                    
+            </div>  
+        </div>
+    </section>
+
+    <!--javascript for homepage slide show-->
+    <script>
+        let y = 0;
+        
+        const showFirstSlideOnPageLoad = () => {
+            const slides = document.querySelectorAll('.slides');
+        
+            //hide all the slides
+            for(let a = 0; a < slides.length; a++){
+                slides[a].style.display = 'none';
+            }                
+
+            slides[0].style.display = 'block';
+
+        }
+        
+        showFirstSlideOnPageLoad();
+        
+        const index = (i) =>{
+        
+            //select all the slides
+            const slides = document.querySelectorAll('.slides');
+        
+            //hide all the slides
+            for(let a = 0; a < slides.length; a++){
+                slides[a].style.display = 'none';
+            }
+        
+            slides[y].style.display = 'block';
+        
+            y = y + i;
+        
+            if (y < 0){
+                y = slides.length - 1;
+            }
+        
+            if (y >= slides.length ){
+                y = 0;
+            }
+        
+        
+            console.log(y);
+        }
+
+
+window.addEventListener('load', async () => {
+  //manipulate DOM using fetch api
+  //https://scotch.io/tutorials/how-to-use-the-javascript-fetch-api-to-get-data
+  //https://medium.com/@johnwadelinatoc/manipulating-the-dom-with-fetch-7bfddf9c526b
+  const res = await fetch('https://starcafe.josephrominda.repl.co/api/v1/slideShow');
+
+  console.log(res.json())
+
+});
+
+    </script> 
+
+   <%- include('../includes/footer.ejs') %>    

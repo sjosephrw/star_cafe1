@@ -1,0 +1,859 @@
+/***********************************************/
+
+/*                   APP START                 */
+
+/***********************************************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+.body {
+    font-size: 20px;
+}
+
+/***********************************************/
+
+/*                   APP END                   */
+
+/***********************************************/
+
+
+/***********************************************/
+
+/*********  REUSABLE COMPONENTS START***********/
+
+/***********************************************/
+/* <!--
+font-family: 'Dosis', sans-serif;
+font-family: 'Cairo', sans-serif;
+font-family: 'Caveat', cursive;
+--> */
+/* 
+#91ce89;
+#7cb37e; */
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+section {
+    width: 100%;
+}
+
+.section-padding {
+    padding: 75px 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 1;
+}
+
+.col-3 {
+    flex: 1;
+}
+
+.col-1-of-3 {
+    flex: 1;
+}
+
+.col-2-of-3 {
+    flex: 2;
+}
+
+.title {
+    text-align: center;
+    font-size: 200%;
+    color: #2196f3;
+    font-family: 'Caveat', cursive;
+    margin: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 2px;
+    display: block;
+}
+
+.btn-primary {
+    background-color: rgb(7, 135, 209);
+    color: white;
+    border: 1px dashed black;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: cornsilk;
+    color: black;  
+    transition: background-color 1s, color 1s; 
+}
+
+
+.btn-warning {
+    background-color: #FF9800;
+    color: white;
+    border: 1px dashed black;
+    text-decoration: none;
+}
+
+.btn-warning:hover {
+    background-color: cornsilk;
+    color: black;  
+    transition: background-color 1s, color 1s; 
+}
+
+
+.btn-danger {
+    background-color: #ff0000ba;
+    color: white;
+    border: 1px dashed black;
+    text-decoration: none;
+}
+
+.btn-danger:hover {
+    background-color: cornsilk;
+    color: black;  
+    transition: background-color 1s, color 1s; 
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.container-form {
+    padding: 20px;
+}
+
+input[type='text'], input[type='email'], input[type='password'] {
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: 1px dashed rgba(33, 150, 243, 0.72);
+}
+
+/***********************************************/
+
+/*********  REUSABLE COMPONENTS END  ***********/
+
+/***********************************************/
+
+/***********************************************/
+
+/*              header start                   */
+
+/***********************************************/
+
+header {
+    width: 100%;
+    color: white;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
+    padding: 10px 20px;
+    background-color: #0095ff;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav i {
+    font-size: 200%;
+}
+
+.logo {
+    float: left;
+    color: white;
+}
+
+.links-navi {
+    float: right;
+    margin-top: 0px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.links-navi li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.resp-menu-open, .resp-menu-close {
+    display: none;
+}
+
+.submenu {
+    position: absolute;
+    background-color: #2196F3;
+    margin-top: 15px;
+    padding: 10px 20px 10px 10px;
+    width: 25% !important;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  } 
+    
+  .submenu li {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 0 !important;
+  }
+
+/***********************************************/
+
+/*                header end                   */
+
+/***********************************************/
+/***********************************************/
+
+/*            section-slideshow                */
+
+/***********************************************/
+
+.section-slideshow {
+    position: relative;
+}
+
+.slides {
+    width: 100%;
+    height: 100vh;
+    font-size: 200%;
+    position: relative;
+}
+
+.slide-1 {
+    /* background-image: url('https://dummyimage.com/1600x600/000000/fff'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(22, 23, 21, 0), rgb(88, 107, 88)), url('https://dummyimage.com/1600x600/fff/000');
+}
+
+.slide-2 {
+    /* background-image: url('https://dummyimage.com/1600x600/000000/fff'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(22, 23, 21, 0), rgb(88, 107, 88)), url('https://dummyimage.com/1600x600/fff/000');
+}
+
+.slide-navigation {
+    position: absolute;
+    top: 45%;
+    font-size: 400%;
+    color: white;
+    z-index: 1;
+}
+
+.move-left {
+    left: 5%;
+}
+
+.move-right {
+    right: 5%;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 42%;
+    color: white;
+    font-family: 'Caveat', cursive;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/***********************************************/
+
+/*            section-slideshow  end           */
+
+/***********************************************/
+
+/***********************************************/
+
+/*            section-welcome                  */
+
+/***********************************************/
+
+.section-welcome {
+    padding: 50px 40px;
+    text-align: center;
+    background-color: #80808026;
+}
+
+.p-welcome {
+    margin: 50px 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+/***********************************************/
+
+/*            section-welcome end              */
+
+/***********************************************/
+
+/***********************************************/
+
+/*            section-features                 */
+
+/***********************************************/
+
+.section-features {
+    padding: 50px 40px 120px 40px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    background-color: #00bcd433;
+}
+
+.section-features i {
+    font-size: 500%;
+    margin-bottom: 30px;
+}
+
+/***********************************************/
+
+/*       section-features     end              */
+
+/***********************************************/
+
+/***********************************************/
+
+/*       section-shop start                    */
+
+/***********************************************/
+
+.card, .card-product, .header-product, .card-product-img {
+    width: 100%;
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.card-product {
+    padding: 10px;
+} 
+
+.card-product {
+    border: 1px dotted rgb(41, 148, 197);
+    border-radius: 2px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-product-img img {
+    width: 100%;
+    /*https://stackoverflow.com/questions/11757537/css-image-size-how-to-fill-not-stretch*/
+    object-fit: cover;/*to make it fill and not stretch*/
+    width: 100%;
+    height: 150px;    
+}
+
+.body-product {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(33, 150, 243, 0.72);
+    color: white;
+}
+
+.body-product h3, p {
+    margin: 20px 0;
+}
+
+.footer-product {
+    padding: 20px 0;
+}
+
+.section-pagination {
+    text-align: center;
+}
+
+.pagination {
+    list-style: none;
+    margin-top: 80px;
+}
+
+.pagination li {
+    display: inline-block;
+    border: 1px solid rgb(41, 148, 197);
+    margin-right: 2px;
+
+}
+
+.pagination li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.pagination li a:hover {
+
+    text-decoration: none;
+    color: white;
+    background-color: rgb(41, 148, 197);
+}
+
+/***********************************************/
+
+/*             section-shop end                */
+
+/***********************************************/
+
+/***********************************************/
+
+/*             section-details start           */
+
+/***********************************************/
+
+.section-details {
+    font-family: 'Cairo', sans-serif;
+}    
+
+.section-details {
+    padding-top: 70px;
+}
+
+.detail-img-product img {
+    width: 100% !important;
+    height: auto;
+}
+
+hr {
+    border: 1px solid #0095ff;
+}
+
+.detail-buttons {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.detail-buttons li {
+    margin-bottom: 10px;
+}
+
+/***********************************************/
+
+/*             section-details end             */
+
+/***********************************************/
+
+
+/***********************************************/
+
+/*             section-cart start              */
+
+/***********************************************/
+
+.section-cart {
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+}
+
+.box-cart {
+    text-align: center;
+    padding-top: 25px;
+    border-radius: 50%;
+    border: 2px dotted black;
+    position: fixed;
+    bottom: 100px;
+    right: 2%;
+    z-index: 3;
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: rgb(41, 148, 197);
+
+}
+
+.link-cart {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.link-cart:hover {
+    text-decoration: none;
+    color: white;    
+}
+
+.cart-dropdown-close {
+    background-color: white;
+    border: 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.cart-dropdown-close i {
+    font-size: 200%;
+}
+
+.contents-dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inner-container {
+    max-height: 55%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.list-content-cart {
+    list-style: none;
+    width: 100%;
+}
+
+.list-content-cart li img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-cart-dropdown {
+    margin-top: 50px;
+}
+
+/***********************************************/
+
+/*             section-cart end                */
+
+/***********************************************/
+
+/***********************************************/
+
+/*      section-cart-page start                */
+
+/***********************************************/
+.img-cart-details-product {
+    text-align: right;
+}
+
+.img-cart-details-product img {
+    height: auto;
+    width: 80%;
+}
+
+.cart-details-info-product {
+    padding: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.cart-checkout-btn {
+    border: 1px dotted #0095ff;
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/***********************************************/
+
+/*      section-cart-page end                  */
+
+/***********************************************/
+
+/***********************************************/
+
+/*             section-checkout start          */
+
+/***********************************************/
+
+
+.section-checkout {
+    font-family: 'Dosis', sans-serif;
+}
+
+.section-checkout a {
+    color: rgb(41, 148, 197);
+}
+
+.checkout-item {
+    border: 1px solid #0095ff;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.img-checkout-item {
+    width: 100%;
+    height: auto;
+}
+
+.info-checkout-item {
+    padding: 20px;
+}
+
+.quantity-checkout-item, .delete-checkout-item {
+    font-size: 200%;
+}
+
+.delete-checkout-item {
+    margin-bottom: 0;
+}
+
+/***********************************************/
+
+/*         section-checkout end                */
+
+/***********************************************/
+
+/***********************************************/
+
+/*         checkout start                      */
+
+/***********************************************/
+
+.form-payment {
+    padding: 50px;
+    
+} 
+
+.purchase {
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    padding: 10px; 
+    color: white;
+    background-color: #0095ff;   
+}
+
+.purchase-info {
+    width: 50%;
+    height: auto;
+    margin: auto;
+
+}
+
+/***********************************************/
+
+/*               checkout end                  */
+
+/***********************************************/
+
+
+
+/***********************************************/
+
+/*              MY ACCOUNT START               */
+
+/***********************************************/
+
+.hero-image {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background-color: #03a9f457;
+}
+
+.hero-content {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+.actions {
+    list-style: none;
+    margin-top: 40px;
+    margin-left: 5%;
+    width: 90%;
+    font-family: 'Exo', sans-serif;
+}
+
+.actions li {
+    margin-bottom: 40px;
+}
+
+.actions li a {
+    font-size: 200%;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #a9e2fb0a;
+    border: 3px solid #0a0a0a;
+    display: block;
+    width: 100%;
+    color: black;
+}
+
+.actions li a:hover {
+    background-color: rgb(97, 94, 94);
+    color: white;
+    transition: background-color 1s, color 1s;
+    border: 3px solid #0a0a0a;    
+}
+
+/***********************************************/
+
+/*              MY ACCOUNT END                 */
+
+/***********************************************/
+
+
+/***********************************************/
+
+/*              ORDERS START                   */
+
+/***********************************************/
+
+.orders-list {
+    list-style: none;
+    width: 100%;
+}
+
+.orders-list li {
+
+    border: 1px solid rgb(7, 7, 7);
+    margin-bottom: 10px;     
+}
+
+
+.orders-list li a {
+    padding: 5px 10px;
+    display: block;
+    width: 100%;  
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.orders-list li a:hover {
+    padding: 10px 20px;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    transition: background-color 1s, color 1s, padding 1s;
+}
+
+/***********************************************/
+
+/*              ORDERS END                     */
+
+/***********************************************/
+
+
+/***********************************************/
+
+/*              LOGIN-REGISTER START           */
+
+/***********************************************/
+
+.forms {
+    background-color: #9a9ea033;
+}
+
+.login-register {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.login-register input[type="text"], input[type="password"]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px dashed black;
+}
+
+/***********************************************/
+
+/*              LOGIN-REGISTER END             */
+
+/***********************************************/
+
+/***********************************************/
+
+/*                   footer                    */
+
+/***********************************************/
+
+footer {
+    width: 100%;
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.navi-social {
+    list-style: none;   
+}
+
+.navi-social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navi-social li a {
+    font-size: 200%;
+    text-decoration: none;
+    color: #0089ff;
+}
+
+
+.navi-social li a:hover {
+    font-size: 200%;
+    text-decoration: none;
+    color: rgb(139, 230, 222);
+}
+
+
+.copyright {
+    margin-top: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+
+/***********************************************/
+
+/*                   footer end                */
+
+/***********************************************/

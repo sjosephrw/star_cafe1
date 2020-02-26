@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Watches E - commerce.</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="An e commerce website that deals in watches!">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Joseph Wimalasuriya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--https://cdnjs.com/libraries/font-awesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media_queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Caveat|Dosis&display=swap" rel="stylesheet">        
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <i class="far fa-clock"></i>
+            </a>
+  
+            <ul class="links-navi">
+                <li>
+                    <a href="#" id="toggle-submenu">MENU</a>
+
+                    <ul class="submenu">
+                        <li><a href="category.html">BREAK FAST</a></li>
+                        <li><a href="category.html">LUNCH</a></li>
+                        <li><a href="category.html">DINNER</a></li>
+                        <li><a href="category.html">DRINKS</a></li>
+                        <li><a href="category.html">COFFEE</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="my_account.html">
+                        MY ACCOUNT
+                    </a>
+                </li>
+                <li>
+                    <a href="search.html">
+                        SEARCH
+                    </a>
+                </li>                            
+            </ul>
+
+            <a href="#" class="resp-menu-close">
+                <i class="fas fa-times"></i>
+            </a>
+            <a href="#" class="resp-menu-open">
+                <i class="fas fa-bars"></i>
+            </a>            
+
+            <div class="clearfix"></div>
+        </nav>
+    </header>
+    <section class="section-title">
+        <div class="container flex">
+            <div class="col-1">
+                <h2>LOGIN / REGISTER</h2>            
+            </div>
+        </div>
+    </section>
+
+    <section class="section-login-register">
+            <div class="container flex forms" style="margin-top: 40px;font-family: 'Exo', sans-serif;">
+                <div class="login-register">
+                    <h2 style="margin-bottom: 20px;">LOGIN</h2>
+                    <form class="form-login">
+                        <input type="text" name="email" value="peter@gmail.com">
+                        <input type="password" name="password" value="">
+                        <button type="submit" class="btn btn-primary full-width">LOGIN</button>
+                    </form>
+                </div>
+                <div class="login-register">
+                    <h2 style="margin-bottom: 20px;">REGISTER</h2>
+                    <form class="form-register">
+                        <input type="text" name="email" value="">
+                        <input type="password" name="password" value="">
+                        <input type="password" name="confirm_password" value="">
+                        <button type="submit" class="btn btn-primary full-width">REGISTER</button>
+                    </form>
+                </div>                  
+            </div>
+        </section>
+
+    <section class="section-cart">
+            <div class="container flex">
+                <div class="col-1">
+                    <button class="link-cart">
+                        <div class="box-cart">
+                            CART <i class="fas fa-shopping-bag"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="contents-dropdown">
+                <div class="header-cart-dropdown">
+                    <button class="cart-dropdown-close"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="inner-container">
+                    <ul class="list-content-cart">
+                        <li><img src="https://dummyimage.com/600x400/000/fff" alt="Item"/></li>
+                        <li>
+                            <p>CHEESE BURGHER</p>
+                            <p>$50 x 2</p>
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>
+                    <ul class="list-content-cart">
+                        <li><img src="https://dummyimage.com/600x400/000/fff" alt="Item"/></li>
+                        <li>
+                            <p>CHEESE BURGHER</p>
+                            <p>$50 x 2</p>
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>              
+                </div>
+                <div class="footer-cart-dropdown">
+                    <a href="cart.html" class="btn btn-primary full-width">CHECKOUT</a>                    
+                </div>  
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <ul class="navi-social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <p class="copyright">&copy;NATOURS PROJECT 2019, All rights reserved, designed and developed by S. Joseph R. Wimalasuriya.</p>
+            </div>
+            
+        </footer>    
+    
+        <script src="js/scripts.js"></script>
+            <!--javascript for homepage slide show-->
+            
+    </body>
+    </html>    

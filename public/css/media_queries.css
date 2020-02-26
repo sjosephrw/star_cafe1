@@ -1,0 +1,121 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .links-navi {
+        margin-top: 40px;
+        float: left;
+        width: 80%;
+    }
+
+    .links-navi li {
+        display: block;
+        width: 100%;
+    }
+
+    .links-navi li a {
+        display: block;
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .links-navi li a:hover {
+        background-color: cornsilk;
+        color: #0095ff;
+    }
+
+    .resp-menu-open, .resp-menu-close {
+        float: right;
+    }    
+
+    .links-navi li {
+        margin-bottom: 20px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .contents-dropdown {
+        width: 80%;
+    }
+
+    .submenu {
+        position: relative;
+        width: 100% !important;
+        height: 100%;
+
+    }
+
+    .submenu li {
+        margin-bottom: 5px;
+    }
+
+    .img-cart-details-product img {
+        height: auto;
+        width: 100%;
+    }
+
+    .purchase {
+        width: 100%;
+        margin-top: 20px;
+    }
+} 
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    .flex {
+        flex-direction: column;
+    }    
+
+    .contents-dropdown {
+        width: 60%;
+    }
+
+    .img-cart-details-product img {
+        height: auto;
+        width: 100%;
+    }
+    .purchase {
+        width: 100%;
+        margin-top: 20px;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+    
+    .submenu {
+        width: 20% !important;
+    }
+    
+    .contents-dropdown {
+        width: 40%;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .submenu {
+        width: 17% !important;
+    }
+
+    .contents-dropdown {
+        width: 35%;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .submenu {
+        width: 15% !important;
+    }
+
+    .contents-dropdown {
+        width: 25%;
+    }    
+
+}
